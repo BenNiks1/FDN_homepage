@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>test</title>
+  </head>
+  <body>
+    <svg style="display: none">
+      <symbol viewBox="0 0 22 22" id="close">
+        <g><g><path fill="#363636" d="M2.822-.013L11 8.177l8.178-8.19 2.816 2.82-8.178 8.19 8.176 8.187-2.817 2.82L11 13.819l-8.176 8.187-2.816-2.82 8.176-8.188-8.179-8.19z"/></g></g>
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="facebook" width="10" height="20">
+        <g>
+          <g>
+            <g>
+              <text
+                dominant-baseline="text-before-edge"
+                style="line-height: 28px"
+                fill="#fff"
+                font-family="'FontAwesome','FontAwesome'"
+                font-size="15.5"
+                font-style="none"
+                font-weight="400"
+              >
+                <tspan style="font-kerning: normal"></tspan>
+              </text>
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 42 41" id="twitter">
+        <path
+          d="M37.645 10.1853C36.4202 10.7136 35.0873 11.0939 33.7144 11.242C35.1398 10.3952 36.2072 9.05736 36.7164 7.47954C35.3788 8.27521 33.9136 8.83315 32.3855 9.12861C31.7469 8.44587 30.9745 7.90197 30.1165 7.5308C29.2585 7.15963 28.3332 6.96914 27.3983 6.97121C23.6159 6.97121 20.5739 10.0372 20.5739 13.7996C20.5739 14.328 20.6379 14.8563 20.742 15.3647C15.0783 15.0685 10.027 12.3627 6.66887 8.22002C6.05697 9.26516 5.73632 10.4552 5.74026 11.6663C5.74026 14.0358 6.94505 16.1251 8.78224 17.3539C7.69955 17.3113 6.64222 17.0137 5.69624 16.4854V16.5694C5.69624 19.8876 8.04176 22.6374 11.1678 23.2698C10.5808 23.4222 9.97704 23.5002 9.37062 23.5019C8.92633 23.5019 8.50606 23.4579 8.08178 23.3979C8.94634 26.1036 11.464 28.0689 14.4619 28.1329C12.1164 29.9701 9.17849 31.0508 5.98843 31.0508C5.41605 31.0508 4.88771 31.0308 4.33936 30.9668C7.36532 32.908 10.9556 34.0288 14.8222 34.0288C27.3743 34.0288 34.2428 23.63 34.2428 14.6042C34.2428 14.308 34.2428 14.0118 34.2227 13.7156C35.5516 12.743 36.7164 11.5382 37.645 10.1853Z"
+          fill="white"
+        />
+      </symbol>
+      <symbol viewBox="0 0 22 22" id="shop">
+        <g>
+          <g>
+            <path
+              fill="#fff"
+              d="M8.8 19.8c0 1.21-.99 2.2-2.2 2.2-1.21 0-2.2-.99-2.2-2.2 0-1.21.99-2.2 2.2-2.2 1.21 0 2.2.99 2.2 2.2zM3.63 0l.99 2.2H20.9c.66 0 1.1.44 1.1 1.1 0 .22 0 .33-.22.55L17.82 11c-.33.66-.99 1.1-1.87 1.1H7.81l-.99 1.87v.11c0 .11.11.22.22.22H19.8v2.2H6.6c-1.21 0-2.2-.99-2.2-2.2 0-.33.11-.77.22-1.1l1.54-2.64L2.2 2.2H0V0zM19.8 19.8c0 1.21-.99 2.2-2.2 2.2-1.21 0-2.2-.99-2.2-2.2 0-1.21.99-2.2 2.2-2.2 1.21 0 2.2.99 2.2 2.2z"
+            />
+          </g>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 24 22" id="menu">
+        <g>
+          <g><path fill="#fff" d="M0 0h24v4H0zm0 18h24v4H0zm0-9h24v4H0z" /></g>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 27 33" id="left">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #6c6c6c;
+              fill-opacity: 0;
+              stroke: #bebebe;
+
+              stroke-width: 6px;
+              fill-rule: evenodd;
+            }
+          </style>
+        </defs>
+        <path
+          id="Left"
+          class="cls-1"
+          d="M1412,441l-21.99,14L1412,469V441Z"
+          transform="translate(-1387.5 -438.5)"
+        />
+      </symbol>
+      <symbol viewBox="0 0 27 33" id="right">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #6c6c6c;
+              fill-opacity: 0;
+              stroke: #bebebe;
+
+              stroke-width: 6px;
+              fill-rule: evenodd;
+            }
+          </style>
+        </defs>
+        <path
+          id="Right"
+          class="cls-1"
+          d="M1390,288l21.99,14L1390,316V288Z"
+          transform="translate(-1387.5 -285.5)"
+        />
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="loupe">
+        <path
+          d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"
+          id="XMLID_223_"
+        />
+      </symbol>
+      <symbol viewBox="0 0 30 30" id="active-star">
+        <path
+          d="M27.304 11.7149C27.2276 11.4896 27.0868 11.2917 26.8991 11.1455C26.7115 10.9994 26.4851 10.9114 26.248 10.8924L19.3118 10.3413L16.3102 3.69704C16.2146 3.48304 16.0592 3.30128 15.8626 3.1737C15.666 3.04611 15.4366 2.97816 15.2022 2.97803C14.9679 2.9779 14.7385 3.0456 14.5417 3.17297C14.345 3.30034 14.1893 3.48193 14.0935 3.69582L11.092 10.3413L4.15574 10.8924C3.92269 10.9109 3.6999 10.9961 3.51401 11.1378C3.32813 11.2796 3.18702 11.4719 3.10757 11.6918C3.02812 11.9117 3.0137 12.1497 3.06602 12.3776C3.11835 12.6054 3.23521 12.8134 3.40262 12.9766L8.52844 17.9734L6.71561 25.8233C6.66056 26.061 6.6782 26.3096 6.76624 26.5371C6.85428 26.7646 7.00866 26.9603 7.20933 27.0989C7.41001 27.2376 7.64772 27.3127 7.89161 27.3146C8.13551 27.3164 8.37434 27.2449 8.5771 27.1094L15.2019 22.6929L21.8266 27.1094C22.0338 27.247 22.2783 27.3178 22.527 27.3123C22.7757 27.3069 23.0167 27.2254 23.2177 27.0788C23.4187 26.9323 23.5701 26.7277 23.6513 26.4926C23.7326 26.2575 23.7399 26.0031 23.6723 25.7637L21.447 17.9771L26.9658 13.0106C27.3272 12.6846 27.4598 12.176 27.304 11.7149Z"
+          fill="#F3CD03"
+        />
+      </symbol>
+      <symbol viewBox="0 0 30 30" id="star">
+        <path
+          d="M8.72887 17.9733L6.91604 25.8232C6.8599 26.0609 6.87676 26.31 6.9644 26.538C7.05204 26.766 7.20639 26.9622 7.40729 27.1011C7.6082 27.24 7.84632 27.3151 8.09055 27.3165C8.33479 27.318 8.57378 27.2457 8.77632 27.1092L15.4011 22.6927L22.0258 27.1092C22.2331 27.2468 22.4775 27.3177 22.7262 27.3122C22.9749 27.3068 23.2159 27.2253 23.417 27.0787C23.618 26.9322 23.7693 26.7276 23.8505 26.4925C23.9318 26.2574 23.9391 26.003 23.8715 25.7636L21.6462 17.9769L27.165 13.0105C27.3418 12.8513 27.468 12.6439 27.5281 12.4137C27.5882 12.1836 27.5795 11.9409 27.5031 11.7157C27.4268 11.4904 27.286 11.2925 27.0984 11.1464C26.9107 11.0002 26.6843 10.9123 26.4472 10.8935L19.511 10.3411L16.5095 3.69692C16.4137 3.48297 16.2582 3.3013 16.0615 3.17382C15.8648 3.04635 15.6354 2.97852 15.4011 2.97852C15.1667 2.97852 14.9373 3.04635 14.7407 3.17382C14.544 3.3013 14.3884 3.48297 14.2927 3.69692L11.2912 10.3411L4.35496 10.8923C4.12191 10.9107 3.89912 10.996 3.71323 11.1377C3.52735 11.2795 3.38624 11.4718 3.30679 11.6917C3.22734 11.9115 3.21292 12.1496 3.26524 12.3775C3.31757 12.6053 3.43443 12.8133 3.60184 12.9764L8.72887 17.9733ZM12.2 12.71C12.4172 12.6929 12.6258 12.6177 12.8039 12.4922C12.982 12.3668 13.123 12.1957 13.2123 11.997L15.4011 7.15347L17.5899 11.997C17.6791 12.1957 17.8202 12.3668 17.9983 12.4922C18.1764 12.6177 18.385 12.6929 18.6021 12.71L23.4347 13.0932L19.455 16.6751C19.1095 16.9866 18.972 17.4659 19.0985 17.9137L20.623 23.2487L16.0775 20.218C15.878 20.0841 15.6432 20.0126 15.4029 20.0126C15.1626 20.0126 14.9278 20.0841 14.7283 20.218L9.97839 23.385L11.2559 17.854C11.3027 17.6506 11.2964 17.4386 11.2376 17.2383C11.1788 17.038 11.0695 16.8562 10.9201 16.7104L7.22386 13.1066L12.2 12.71Z"
+          fill="#F3CD03"
+        />
+      </symbol>
+    </svg>
+    <header class="header">
+  <div class="header__inner">
+    <img src="./img/Logo.png" alt="Logo" class="header__inner-logo" />
+
+    <nav class="header__inner-nav">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="#">
+            <img src="./img/header/facebook.png" alt="" />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            <img src="./img/header/twitter.png" alt="" />
+          </a>
+        </li>
+        <li class="header__list-item shop">
+          <a href="#">
+            <svg  id='shopBtn'style="width: 22px; height: 22px">
+              <use xlink:href="#shop"></use>
+            </svg>
+          </a>
+          <span class="goods">99</span>
+          <div class="shop-window">
+            <span class="arrow"></span>
+            <ul class="shop-window__list">
+              <li class="shop-window__list-item">
+                <img src="../img/50px.jpg" alt="" class="shop-window__list-img" />
+                <div class="names">
+                  <p class="shop-window__list-name">Drill for Real</p>
+                  <p class="shop-window__list-price">
+                    <span class="number">1 x </span>£59.00
+                  </p>
+                </div>
+              </li>
+              <li class="shop-window__list-item">
+                <img src="../img/50px.jpg" alt="" class="shop-window__list-img" />
+                <div class="names">
+                  <p class="shop-window__list-name">Drill Mrill Brill (2)</p>
+                  <p class="shop-window__list-price">
+                    <span class="number">1 x </span>£59.00
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="subtotal">Subtotal: <span class="subtotal-price">£259.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+            <button class="view-btn">view cart</button>
+          </div>
+          
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            <svg id="menuBtn" style="width: 24px; height: 22px">
+              <use xlink:href="#menu"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- carusel -->
+  <div class="slider__container">
+    <div class="slider__inner">
+      <ul class="slider__inner-list" id="slider">
+        <li class="slider__inner-img active" id="img">
+          <img src="../img/header/slider/1.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">BUILDING THE WORLD AROUND US</h2>
+            <hr />
+            <p class="slider__info-text">
+              Still other clients have reserved for capital improvement projects
+              and will work directly with our Design and Engineering team.
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+        <li class="slider__inner-img" id="img">
+          <img src="../img/header/slider/2.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">Lorem ipsum dolor sit amet.</h2>
+            <hr />
+            <p class="slider__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt, similique?
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+        <li class="slider__inner-img" id="img">
+          <img src="../img/header/slider/3.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">Lorem, ipsum dolor.</h2>
+            <hr />
+            <p class="slider__info-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+              praesentium quos eum explicabo quod amet.
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /carusel -->
+  <div class="header__intro">
+    <button class="header__intro-video">
+      <img src="./img/header/video.png" alt="" />
+      company video
+    </button>
+
+    <div class="dots-wrapper">
+      <button class="btn-next" id="btn">
+        <svg><use xlink:href="#right"></use></svg>
+      </button>
+      <p>
+        <span class="dot active">01</span>
+        <span class="dot">02</span>
+        <span class="dot">03</span>
+        /03
+      </p>
+      <button class="btn-prev" id="btn">
+        <svg><use xlink:href="#left"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+    <section class="navigation " id="nav">
+  <div class="navigation__head">
+    <h2 class="navigation__head-title">navigation</h2>
+    <span>
+      <svg class="navigation__head-close"><use xlink:href="#close"></use></svg>
+    </span>
+  </div>
+  <ul class="navigation__list">
+    <li class="navigation__list-item">
+      <a href="#" class="navigation__list-link">Home</a>
+    </li>
+    <li class="navigation__list-item hovered-nav">
+      <a href="#" class="navigation__list-link ">Services</a>
+      
+      <ul class="navigation__sub-list">
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link ">General contrcting</a>
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link"
+            >Project design and engineering</a
+          >
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">Capital improvements</a>
+        </li>
+      </ul>
+    </li>
+    <li class="navigation__list-item hovered-nav">
+      <a href="#" class="navigation__list-link ">Our Works</a>
+      <ul class="navigation__sub-list">
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">General contrcting</a>
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link"
+            >Project design and engineering</a
+          >
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">Capital improvements</a>
+        </li>
+      </ul>
+    </li>
+    <li class="navigation__list-item hovered-nav">
+      <a href="#" class="navigation__list-link ">News & events</a>
+      <ul class="navigation__sub-list">
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">General contrcting</a>
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link"
+            >Project design and engineering</a
+          >
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">Capital improvements</a>
+        </li>
+      </ul>
+    </li>
+    <li class="navigation__list-item">
+      <a href="#" class="navigation__list-link">Work with us</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="#" class="navigation__list-link">F.A.Q</a>
+    </li>
+    <li class="navigation__list-item">
+      <a href="#" class="navigation__list-link">Contact us</a>
+    </li>
+    <li class="navigation__list-item hovered-nav">
+      <a href="#" class="navigation__list-link ">Shop</a>
+      <ul class="navigation__sub-list">
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">General contrcting</a>
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link"
+            >Project design and engineering</a
+          >
+        </li>
+        <li class="navigation__sub-list-item">
+          <a href="#" class="navigation__sub-list-link">Capital improvements</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="navigation__contact">
+    <img src="../img/navigation.png" alt="" class="navigation__contact-img" />
+    <p class="navigation__contact-address">
+      Stlemixthemes USA, Callifornia 20, Firs Avenue, 2365 Callifornia,
+    </p>
+    <a href="tel:18881116868" class="navigation__contact-phone"
+      >1 888 111 68 68</a
+    >
+    <time class="navigation__contact-work-time" datetime="6:00 18:00"
+      >6:00 - 18:00 sunday <span>closed</span></time
+    >
+    <a href="mailto:info@stylemixthemes.com" class="navigation__contact-email"
+      >info@stylemixthemes.com</a
+    >
+  </div>
+  <form action="" class="navigation__search">
+      <input type="text" class="navigation__search-input" placeholder="Search">
+      <button class="navigation__search-btn">
+          <svg><use xlink:href='#loupe'></use></svg>
+      </button>
+  </form>
+</section>
+
+    
+    <main class="main">
+      <section class="services">
+    <div class="services__inner">
+      <div class="services__intro">
+        <h2 class="services__intro-title">Our services</h2>
+        <hr />
+        <p class="services__intro-text">
+          Our mission is to provide the highest level of service for our
+          client-partners from concept through construction.
+        </p>
+      </div>
+      <div class="dots-wrapper">
+        <span class="btn-next" id="service-btn-next">
+          <img src="../img/header/Right.png" alt="" />
+        </span>
+        <p>
+          <span class="dot active">03</span>
+          <span class="dot">06</span>
+          /06
+        </p>
+        <span class="btn-prev" id="service-btn-prev">
+          <img src="../img/header/Left.png" alt="" />
+        </span>
+      </div>
+    </div>
+
+    <ul class="services__list">
+      <li class="services__item" style="background:url(../img/293px.jpg)"></li>
+
+      <li class="services__item">
+        <h3 class="services__item-title">General Contracting</h3>
+        <hr />
+        <p class="services__item-text">
+          This allows the Design and Engineering team to originate drawings,
+          specifications, structural calculations, details and scopes of
+          work that deliver exactly what the client had intended to achieve.
+        </p>
+      </li>
+
+      <li class="services__item" style="background:url(../img/293px.jpg)"></li>
+
+      <li class="services__item">
+        <h3 class="services__item-title">Project design and engineering</h3>
+        <hr />
+        <p class="services__item-text">
+          Through Stage-Gate, Design and Engineering methodology, DMCS
+          ensure client-partners realize clearly defined project objective
+          to achieve intended results.
+        </p>
+      </li>
+      <li class="services__item" style="background:url(../img/293px.jpg)"></li>
+      
+      <li class="services__item">
+        <h3 class="services__item-title">Capital improvements</h3>
+        <hr />
+        <p class="services__item-text">
+          This results in scope creep and slippage of the schedule that
+          ultimately result in additional costs to the owner.
+        </p>
+      </li>
+    </ul>
+  </section>
+   
+      <section class="info-section">
+  <button class="info-section__price">
+    <a download="#" class="info-section__price-link">
+      <img src="./img/info-section/pdf.png" alt="" />
+      download price
+    </a>
+  </button>
+  <button class="info-section__contact">
+    <img src="./img/info-section/contact.png" alt="" />
+    Contact us
+  </button>
+  <form action="" class="info-section__form">
+    <div class="info-section__form-inner">
+      <input
+        type="search"
+        name=""
+        id=""
+        placeholder="What you're looking for"
+      />
+      <button>
+        <svg><use xlink:href="#loupe"></use></svg>
+      </button>
+    </div>
+    <img src="./img/info-section/search-pic.jpg" alt="" />
+  </form>
+</section>
+
+      <div class="container">
+  <!-- testimonials -->
+  <section class="testimonials">
+    <ul class="testimonials__list">
+      <li class="testimonials__list-item">
+        <img
+          src="../img/testimonials/1.jpg"
+          alt=""
+          class="testimonials__list-img"
+        />
+        <p class="testimonials__list-name">Martin H. Jhonsons</p>
+        <ul class="testimonials__list-rating">
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#star"></use></svg>
+          </li>
+        </ul>
+        <p class="testimonials__list-text active">
+          Together, we'll couple our knowledge, expertise, and innovative
+          capabilities with your astute knowledge of your business—to maximize
+          and optimize results. This is all accomplished in a number of ways.
+        </p>
+      </li>
+
+      <li class="testimonials__list-item">
+        <img
+          src="../img/testimonials/1.jpg"
+          alt=""
+          class="testimonials__list-img"
+        />
+        <p class="testimonials__list-name">Tony SH. Schults</p>
+        <ul class="testimonials__list-rating">
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+        </ul>
+        <p class="testimonials__list-text active">
+          When selecting DMCS as the design-build team, clients benefit in terms
+          of efficiency and continuity that translate into cost savings and
+          optimized schedules.
+        </p>
+        <p class="testimonials__list-text">
+          Contact us today and see how DMCS can best serve you from
+          concept-through-construction.
+        </p>
+        <div class="testimonials__list-dots">
+          <span class="testimonials__list-dot active"></span>
+          <span class="testimonials__list-dot"></span>
+        </div>
+      </li>
+
+      <li class="testimonials__list-item">
+        <img
+          src="../img/testimonials/1.jpg"
+          alt=""
+          class="testimonials__list-img"
+        />
+        <p class="testimonials__list-name">David Mc. Adams</p>
+        <ul class="testimonials__list-rating">
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+          <li class="rating">
+            <svg><use xlink:href="#active-star"></use></svg>
+          </li>
+        </ul>
+        <p class="testimonials__list-text active">
+          In most urban areas, construction has already built existing
+          structures, many having been standing for decades.
+        </p>
+      </li>
+    </ul>
+  </section>
+  <!-- /testimonials -->
+  <!-- news -->
+  <section class="news">
+    <h2 class="news__title">news</h2>
+    <article class="news__inner">
+      <time class="news__inner-time" datetime="2015-02-12"
+        >12 february, 2015</time
+      >
+      <p class="news__inner-title">Project Design and Engineering Services</p>
+      <a href="#" class="news__inner-comments">23 comments</a>
+    </article>
+    <div class="news__list-dots">
+      <span class="news__list-dot active"></span>
+      <span class="news__list-dot"></span>
+      <span class="news__list-dot"></span>
+    </div>
+  </section>
+  <!-- /news -->
+  <!-- adventages -->
+  <section class="advantages">
+    <article class="about-company">
+      <h2 class="about-company__title">Your building is in good hands</h2>
+      <hr />
+      <p class="about-company__text">
+        Our mission is to provide the highest level of service for our
+        client-partners from concept through construction.
+      </p>
+      <button class="about-company__btn">about company</button>
+    </article>
+    <ul class="advantages__list">
+      <li class="advantages__list-item">
+        <img
+          src="../img/advantages/1.png"
+          alt=""
+          class="advantages__list-img"
+        />
+        <p class="advantages__list-numbers">55 000</p>
+        <p class="advantages__list-description">Expert Witness</p>
+      </li>
+
+      <li class="advantages__list-item">
+        <img
+          src="../img/advantages/2.png"
+          alt=""
+          class="advantages__list-img"
+        />
+        <p class="advantages__list-numbers">124 600</p>
+        <p class="advantages__list-description">Construction</p>
+      </li>
+
+      <li class="advantages__list-item">
+        <img
+          src="../img/advantages/3.png"
+          alt=""
+          class="advantages__list-img"
+        />
+        <p class="advantages__list-numbers">18 000</p>
+        <p class="advantages__list-description">Procurement</p>
+      </li>
+
+      <li class="advantages__list-item">
+        <img
+          src="../img/advantages/4.png"
+          alt=""
+          class="advantages__list-img"
+        />
+        <p class="advantages__list-numbers">78 150</p>
+        <p class="advantages__list-description">Project Managments</p>
+      </li>
+    </ul>
+  </section>
+  <!-- /adventages -->
+  <!-- project -->
+  <section class="project">
+    <article class="project__inner">
+      <h2 class="project__inner-title">Contemporary Villa</h2>
+      <hr />
+      <div>
+        <p class="project__inner-text">
+          Diversity is a buzzword often heard by brand managers, business
+          tycoons, politicians, and more; but it's much more than that. To us at
+          DM Construction, diversity is the name of the game.
+        </p>
+        <p class="project__inner-text">
+          We offer a diverse set of skills to all clients in all fields, but
+          also offer a diverse group of individuals who are able to deliver
+          those skills. From Construction Managers and Project Managers, to
+          licensed Architects and Engineers, Designers, Business Development
+          gurus, Construction Superintendents and Construction Project
+          Engineers, DM Construction has a strong team that is as diverse as
+          they are skilled.
+        </p>
+      </div>
+      <button class="project__inner-btn">view project</button>
+    </article>
+  </section>
+  <!-- /project -->
+  <!-- carusel -->
+  <section class="carusel">
+    <div class="carusel__inner">
+      <ul class="carusel__inner-list" id="slider-footer">
+        <li class="carusel__inner-img active" id="img">
+          <img src="../img/header/slider/1.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/2.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/3.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/1.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/2.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/3.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/1.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/2.jpg" alt="" />
+        </li>
+        <li class="carusel__inner-img" id="img">
+          <img src="../img/header/slider/3.jpg" alt="" />
+        </li>
+      </ul>
+    </div>
+    <div class="dots-wrapper">
+      <button class="btn-next" id="btn-next">
+        <svg><use xlink:href="#right"></use></svg>
+      </button>
+      <p>
+        <span class="dot active">01</span>
+        <span class="dot">02</span>
+        <span class="dot">03</span>
+        <span class="dot">04</span>
+        <span class="dot">05</span>
+        <span class="dot">06</span>
+        <span class="dot">07</span>
+        <span class="dot">08</span>
+        <span class="dot">09</span>
+        /09
+      </p>
+      <button class="btn-prev" id="btn-prev">
+        <svg><use xlink:href="#left"></use></svg>
+      </button>
+    </div>
+  </section>
+  <!-- /carusel -->
+  <!-- job-vacancy -->
+  <section class="job-vacancy">
+    <button class="job-vacancy-btn">
+      <img src="../img/job.png" alt="" />
+      Work with us
+    </button>
+  </section>
+  <!-- /job-vacancy -->
+  <!-- subscribe -->
+  <section class="subscribe">
+    <h2 class="subscribe__title">Subscribe</h2>
+    <hr />
+    <form action="" class="subscribe__form">
+      <input type="text" placeholder="E-mail" class="subscribe__form-input" />
+      <button class="subscribe__form-btn">sign up</button>
+    </form>
+  </section>
+  <!-- /subscribe -->
+</div>
+
+    </main>
+    <footer class="footer">
+  <p class="footer__copyright">
+    2015 © Copyright - Foundation theme by
+    <a href="#" class="footer__copyright-link">Stylemixthemes</a>
+  </p>
+  <ul class="footer__list">
+    <li class="footer__list-item">Services</li>
+    <li class="footer__list-item">Our Works</li>
+    <li class="footer__list-item">News & events</li>
+    <li class="footer__list-item">Work with us</li>
+    <li class="footer__list-item">F.A.Q</li>
+    <li class="footer__list-item">Contact us</li>
+    <li class="footer__list-item">Shop</li>
+  </ul>
+</footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

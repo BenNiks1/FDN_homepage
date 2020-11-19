@@ -1,0 +1,127 @@
+<header class="header">
+  <div class="header__inner">
+    <img src="./img/Logo.png" alt="Logo" class="header__inner-logo" />
+
+    <nav class="header__inner-nav">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="#">
+            <img src="./img/header/facebook.png" alt="" />
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            <img src="./img/header/twitter.png" alt="" />
+          </a>
+        </li>
+        <li class="header__list-item shop">
+          <a href="#">
+            <svg  id='shopBtn'style="width: 22px; height: 22px">
+              <use xlink:href="#shop"></use>
+            </svg>
+          </a>
+          <span class="goods">99</span>
+          <div class="shop-window">
+            <span class="arrow"></span>
+            <ul class="shop-window__list">
+              <li class="shop-window__list-item">
+                <img src="../img/50px.jpg" alt="" class="shop-window__list-img" />
+                <div class="names">
+                  <p class="shop-window__list-name">Drill for Real</p>
+                  <p class="shop-window__list-price">
+                    <span class="number">1 x </span>£59.00
+                  </p>
+                </div>
+              </li>
+              <li class="shop-window__list-item">
+                <img src="../img/50px.jpg" alt="" class="shop-window__list-img" />
+                <div class="names">
+                  <p class="shop-window__list-name">Drill Mrill Brill (2)</p>
+                  <p class="shop-window__list-price">
+                    <span class="number">1 x </span>£59.00
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="subtotal">Subtotal: <span class="subtotal-price">£259.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+            <button class="view-btn">view cart</button>
+          </div>
+          
+        </li>
+        <li class="header__list-item">
+          <a href="#">
+            <svg id="menuBtn" style="width: 24px; height: 22px">
+              <use xlink:href="#menu"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- carusel -->
+  <div class="slider__container">
+    <div class="slider__inner">
+      <ul class="slider__inner-list" id="slider">
+        <li class="slider__inner-img active" id="img">
+          <img src="../img/header/slider/1.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">BUILDING THE WORLD AROUND US</h2>
+            <hr />
+            <p class="slider__info-text">
+              Still other clients have reserved for capital improvement projects
+              and will work directly with our Design and Engineering team.
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+        <li class="slider__inner-img" id="img">
+          <img src="../img/header/slider/2.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">Lorem ipsum dolor sit amet.</h2>
+            <hr />
+            <p class="slider__info-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Incidunt, similique?
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+        <li class="slider__inner-img" id="img">
+          <img src="../img/header/slider/3.jpg" alt="" />
+          <article class="slider__info">
+            <h2 class="slider__info-title">Lorem, ipsum dolor.</h2>
+            <hr />
+            <p class="slider__info-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+              praesentium quos eum explicabo quod amet.
+            </p>
+            <button class="slider__info-btn">read more</button>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- /carusel -->
+  <div class="header__intro">
+    <button class="header__intro-video">
+      <img src="./img/header/video.png" alt="" />
+      company video
+    </button>
+
+    <div class="dots-wrapper">
+      <button class="btn-next" id="btn">
+        <svg><use xlink:href="#right"></use></svg>
+      </button>
+      <p>
+        <span class="dot active">01</span>
+        <span class="dot">02</span>
+        <span class="dot">03</span>
+        /03
+      </p>
+      <button class="btn-prev" id="btn">
+        <svg><use xlink:href="#left"></use></svg>
+      </button>
+    </div>
+  </div>
+</header>

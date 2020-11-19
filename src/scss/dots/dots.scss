@@ -1,0 +1,48 @@
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 293px;
+  height: 293px;
+  background: #fff;
+  p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+  }
+  .dot {
+    display: none;
+  }
+  .active {
+    display: block;
+    color: #363636;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+
+    margin: 52px 0;
+  }
+  .btn-next {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: none;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .btn-prev {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: none;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
