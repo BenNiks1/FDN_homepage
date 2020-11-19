@@ -1563,8 +1563,36 @@ body {
   height: 19px;
 }
 
+.hovered-nav {
+  position: relative;
+}
+
 .hovered-nav:hover .navigation__sub-list {
   display: block;
+}
+
+.hovered-nav:hover .arrow {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 5px solid #d1d1d1;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.arrow {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 5px solid #d1d1d1;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 
 @media screen and (max-width: 1919px) {
