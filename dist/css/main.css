@@ -1608,7 +1608,7 @@ body {
   border-bottom: 5px solid transparent;
 }
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1900px) {
   .header .slider__container .slider__inner {
     left: 0;
   }
