@@ -108,6 +108,7 @@ body {
 }
 
 .header .slider__container .slider__info {
+  display: none;
   position: absolute;
   top: 240px;
   left: 375px;
@@ -373,6 +374,10 @@ body {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.slider__inner-img.active .slider__info {
+  display: block;
 }
 
 /*services

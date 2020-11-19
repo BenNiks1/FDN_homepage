@@ -73,6 +73,7 @@
       }
     }
     .slider__info {
+      display: none;
       position: absolute;
       top: 240px;
       left: 375px;
@@ -275,3 +276,9 @@
   color: #363636;
 }
 @import "./shop.scss";
+
+.slider__inner-img.active{
+  .slider__info{
+    display: block;
+  }
+}
