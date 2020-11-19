@@ -97,9 +97,9 @@ let footerSlider = new Slider(
 );
 
 let serviceSlider = new Slider(
-  servicePrev,
   serviceNext,
+  servicePrev,
   dotsService[0].parentNode,
   sliderService[0],
-  [1, 2]
+  [1, 2, 3, 4, 5, 6]
 );
