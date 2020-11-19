@@ -1341,6 +1341,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 10;
   width: 313px;
   height: 3238px;
   padding: 30px;
