@@ -50,6 +50,7 @@
     background: #fff;
     padding: 29px 40px 37px 40px;
     list-style: none;
+    
     hr {
       width: 40px;
       height: 5px;
@@ -76,6 +77,12 @@
   @import "./dots/dots.scss";
 }
 
+.service-slide{
+  background:url(../img/293px.jpg);
+}
+.service-slide.active{
+  background: #000;
+}
 .arrow-left{
   position: absolute;
   top: 140px;

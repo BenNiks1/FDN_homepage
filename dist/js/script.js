@@ -1,15 +1,46 @@
-const prev = document.querySelector(".btn-prev"),
-  next = document.querySelector(".btn-next"),
+const headerPrev = document.querySelector(".btn-prev"),
+  headerNext = document.querySelector(".btn-next"),
   slides = document.querySelectorAll("#img"),
   dots = document.querySelectorAll(".dot"),
   caruselWrapper = document.querySelectorAll("#slider");
 
-//   const sliderInfo = document.querySelector(".slider__info");
-// slides.forEach((slide) => {
-//   if (slide.classList.contains("active")) {
-//     sliderInfo.style.display = "block";
-//   }
-// });
+const sliderFooter = document.getElementById("slider-footer"),
+  footerPrev = document.getElementById("btn-prev"),
+  footerNext = document.getElementById("btn-next"),
+  dotsFooter = document.querySelectorAll(".footer-dot");
+
+const sliderService = document.querySelectorAll(".services__list"),
+  servicePrev = document.getElementById("service-btn-next"),
+  serviceNext = document.getElementById("service-btn-prev"),
+  dotsService = document.querySelectorAll(".service-dot");
+
+const menuButton = document.getElementById("menuBtn"),
+  nav = document.querySelector(".navigation"),
+  shopBtn = document.getElementById("shopBtn"),
+  shopWindow = document.querySelector(".shop-window"),
+  closeBtn = document.querySelector(".navigation__head-close");
+
+menuButton.onclick = () => {
+  if (nav.classList.contains("active")) {
+    nav.classList.remove("active");
+  } else {
+    nav.classList.add("active");
+  }
+};
+
+closeBtn.onclick = () => {
+  if (nav.classList.contains("active")) {
+    nav.classList.remove("active");
+  }
+};
+
+shopBtn.onclick = () => {
+  if (shopWindow.classList.contains("active")) {
+    shopWindow.classList.remove("active");
+  } else {
+    shopWindow.classList.add("active");
+  }
+};
 
 function Slider(leftControl, rightControl, indicator, displayer, data) {
   this.lctrl = leftControl;
@@ -50,39 +81,25 @@ function Slider(leftControl, rightControl, indicator, displayer, data) {
 }
 
 let headerSlider = new Slider(
-  prev,
-  next,
+  headerPrev,
+  headerNext,
   dots[0].parentNode,
   caruselWrapper[0],
   [1, 2, 3]
 );
 
+let footerSlider = new Slider(
+  footerPrev,
+  footerNext,
+  dotsFooter[0].parentNode,
+  sliderFooter,
+  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+);
 
-
-const menuButton = document.getElementById("menuBtn");
-const nav = document.querySelector(".navigation");
-const shopBtn = document.getElementById('shopBtn')
-const shopWindow = document.querySelector('.shop-window')
-const closeBtn = document.querySelector(".navigation__head-close");
-
-menuButton.onclick = () => {
-  if (nav.classList.contains("active")) {
-    nav.classList.remove("active");
-  } else {
-    nav.classList.add("active");
-  }
-};
-
-closeBtn.onclick = () => {
-  if (nav.classList.contains("active")) {
-    nav.classList.remove("active");
-  }
-};
-
-shopBtn.onclick = () => {
-  if (shopWindow.classList.contains("active")) {
-    shopWindow.classList.remove("active");
-  } else {
-    shopWindow.classList.add("active");
-  }
-};
+let serviceSlider = new Slider(
+  servicePrev,
+  serviceNext,
+  dotsService[0].parentNode,
+  sliderService[0],
+  [1, 2]
+);
